@@ -1,0 +1,4 @@
+Name: Cameron
+Age: 20
+Location: USA
+Gender: Male

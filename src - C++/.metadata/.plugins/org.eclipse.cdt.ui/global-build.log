@@ -1,0 +1,37 @@
+23:44:13 **** Build of configuration Debug for project Test ****
+make all 
+Building file: ../Test.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Test.d" -MT"Test.o" -o "Test.o" "../Test.cpp"
+Finished building: ../Test.cpp
+ 
+Building target: Test.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Test.exe"  ./Test.o   
+Finished building target: Test.exe
+ 
+23:44:20 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for 'all'.
+23:44:58 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for 'all'.
+23:45:27 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for 'all'.
+23:46:42 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for 'all'.
+23:49:23 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for 'all'.
+23:49:38 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for 'all'.
+23:50:06 **** Incremental Build of configuration Debug for project Test ****
+make all 
+make: Nothing to be done for 'all'.
+Info: Nothing to build for AddingTwoVariables
+Info: Nothing to build for FunctionCall
+Info: Nothing to build for FunctionReturn
+Info: Nothing to build for Hamiltonian Cycle2

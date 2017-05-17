@@ -1,0 +1,15 @@
+14:10:07 **** Incremental Build of configuration Debug for project Practice ****
+make all 
+Building file: ../Hello World.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hello World.d" -MT"Hello\ World.d" -o "Hello World.o" "../Hello World.cpp"
+Finished building: ../Hello World.cpp
+ 
+Building target: Practice.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Practice.exe"  ./Hello\ World.o   
+Finished building target: Practice.exe
+ 
+
+14:10:29 Build Finished (took 22s.441ms)
+
