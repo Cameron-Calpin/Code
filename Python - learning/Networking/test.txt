@@ -1,0 +1,5 @@
+this is a test
+INFO:pyftpdlib:>>> starting FTP server on 0.0.0.0:2121, pid=5600 <<<
+INFO:pyftpdlib:concurrency model: async
+INFO:pyftpdlib:masquerade (NAT) address: None
+INFO:pyftpdlib:passive ports: None
