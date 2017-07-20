@@ -1,37 +1,378 @@
-23:44:13 **** Build of configuration Debug for project Test ****
-make all 
-Building file: ../Test.cpp
-Invoking: Cygwin C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Test.d" -MT"Test.o" -o "Test.o" "../Test.cpp"
-Finished building: ../Test.cpp
- 
-Building target: Test.exe
-Invoking: Cygwin C++ Linker
-g++  -o "Test.exe"  ./Test.o   
-Finished building target: Test.exe
- 
-23:44:20 **** Incremental Build of configuration Debug for project Test ****
-make all 
-make: Nothing to be done for 'all'.
-23:44:58 **** Incremental Build of configuration Debug for project Test ****
-make all 
-make: Nothing to be done for 'all'.
-23:45:27 **** Incremental Build of configuration Debug for project Test ****
-make all 
-make: Nothing to be done for 'all'.
-23:46:42 **** Incremental Build of configuration Debug for project Test ****
-make all 
-make: Nothing to be done for 'all'.
-23:49:23 **** Incremental Build of configuration Debug for project Test ****
-make all 
-make: Nothing to be done for 'all'.
-23:49:38 **** Incremental Build of configuration Debug for project Test ****
-make all 
-make: Nothing to be done for 'all'.
-23:50:06 **** Incremental Build of configuration Debug for project Test ****
-make all 
-make: Nothing to be done for 'all'.
-Info: Nothing to build for AddingTwoVariables
-Info: Nothing to build for FunctionCall
-Info: Nothing to build for FunctionReturn
-Info: Nothing to build for Hamiltonian Cycle2
+23:44:46 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+..\window.cpp:1:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+23:44:50 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+..\window.cpp:1:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+23:53:48 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+..\window.cpp:1:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+23:55:18 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+..\window.cpp:1:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:04:07 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+..\window.cpp:1:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:04:36 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+..\window.cpp:1:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:04:40 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+..\window.cpp:1:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:07:35 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:9:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:08:30 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:9:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:08:35 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+..\window.cpp:1:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:08:43 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:9:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:08:56 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+..\window.cpp:1:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:23:01 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+..\window.cpp:1:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:23:04 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+..\window.cpp:1:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:23:09 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+..\window.cpp:1:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:23:10 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+..\window.cpp:1:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:23:15 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:9:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:23:19 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:9:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:23:22 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+..\window.cpp:1:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:23:24 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+..\window.cpp:1:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:23:26 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+..\window.cpp:1:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:23:28 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:9:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:23:30 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:9:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:25:18 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Users\\cam.bruh-PC\\Desktop\\Code\\src - C++\\SDL_Shapes" -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+In file included from ..\window.cpp:1:0:
+C:\Users\cam.bruh-PC\Desktop\Code\src - C++\SDL_Shapes/window.h:29:2: warning: identifier 'nullptr' is a keyword in C++11 [-Wc++0x-compat]
+  SDL_Window* _window = nullptr;
+  ^
+C:\Users\cam.bruh-PC\Desktop\Code\src - C++\SDL_Shapes/window.h:24:15: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  int _width = 800;
+               ^
+C:\Users\cam.bruh-PC\Desktop\Code\src - C++\SDL_Shapes/window.h:25:16: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  int _height = 600;
+                ^
+C:\Users\cam.bruh-PC\Desktop\Code\src - C++\SDL_Shapes/window.h:27:17: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  bool _closed = false;
+                 ^
+C:\Users\cam.bruh-PC\Desktop\Code\src - C++\SDL_Shapes/window.h:29:24: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  SDL_Window* _window = nullptr;
+                        ^
+C:\Users\cam.bruh-PC\Desktop\Code\src - C++\SDL_Shapes/window.h:29:24: error: 'nullptr' was not declared in this scope
+..\window.cpp: In member function 'bool Window::init()':
+..\window.cpp:33:17: error: 'nullptr' was not declared in this scope
+  if (_window == nullptr) {
+                 ^
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:25:39 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Users\\cam.bruh-PC\\Desktop\\Code\\src - C++\\SDL_Shapes" -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+In file included from ..\main.cpp:9:0:
+C:\Users\cam.bruh-PC\Desktop\Code\src - C++\SDL_Shapes/window.h:29:2: warning: identifier 'nullptr' is a keyword in C++11 [-Wc++0x-compat]
+  SDL_Window* _window = nullptr;
+  ^
+C:\Users\cam.bruh-PC\Desktop\Code\src - C++\SDL_Shapes/window.h:24:15: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  int _width = 800;
+               ^
+C:\Users\cam.bruh-PC\Desktop\Code\src - C++\SDL_Shapes/window.h:25:16: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  int _height = 600;
+                ^
+C:\Users\cam.bruh-PC\Desktop\Code\src - C++\SDL_Shapes/window.h:27:17: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  bool _closed = false;
+                 ^
+C:\Users\cam.bruh-PC\Desktop\Code\src - C++\SDL_Shapes/window.h:29:24: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  SDL_Window* _window = nullptr;
+                        ^
+C:\Users\cam.bruh-PC\Desktop\Code\src - C++\SDL_Shapes/window.h:29:24: error: 'nullptr' was not declared in this scope
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:25:46 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Users\\cam.bruh-PC\\Desktop\\Code\\src - C++\\SDL_Shapes" -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+In file included from ..\window.cpp:1:0:
+C:\Users\cam.bruh-PC\Desktop\Code\src - C++\SDL_Shapes/window.h:29:2: warning: identifier 'nullptr' is a keyword in C++11 [-Wc++0x-compat]
+  SDL_Window* _window = nullptr;
+  ^
+C:\Users\cam.bruh-PC\Desktop\Code\src - C++\SDL_Shapes/window.h:24:15: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  int _width = 800;
+               ^
+C:\Users\cam.bruh-PC\Desktop\Code\src - C++\SDL_Shapes/window.h:25:16: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  int _height = 600;
+                ^
+C:\Users\cam.bruh-PC\Desktop\Code\src - C++\SDL_Shapes/window.h:27:17: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  bool _closed = false;
+                 ^
+C:\Users\cam.bruh-PC\Desktop\Code\src - C++\SDL_Shapes/window.h:29:24: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  SDL_Window* _window = nullptr;
+                        ^
+C:\Users\cam.bruh-PC\Desktop\Code\src - C++\SDL_Shapes/window.h:29:24: error: 'nullptr' was not declared in this scope
+..\window.cpp: In member function 'bool Window::init()':
+..\window.cpp:33:17: error: 'nullptr' was not declared in this scope
+  if (_window == nullptr) {
+                 ^
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:27:57 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:9:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:28:05 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+..\window.cpp:1:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:30:20 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+..\window.cpp:1:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:34:21 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:9:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:34:28 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o window.o "..\\window.cpp" 
+..\window.cpp:1:20: fatal error: window.h: No such file or directory
+compilation terminated.
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:34:34 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+In file included from ..\main.cpp:9:0:
+..\window.h:33:2: warning: identifier 'nullptr' is a keyword in C++11 [-Wc++0x-compat]
+  SDL_Window* _window = nullptr;
+  ^
+..\window.h:28:15: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  int _width = 800;
+               ^
+..\window.h:29:16: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  int _height = 600;
+                ^
+..\window.h:31:17: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  bool _closed = false;
+                 ^
+..\window.h:33:24: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  SDL_Window* _window = nullptr;
+                        ^
+..\window.h:33:24: error: 'nullptr' was not declared in this scope
+..\window.h: In function 'int SDL_main(int, char**)':
+..\window.h:31:17: error: 'bool Window::_closed' is private
+  bool _closed = false;
+                 ^
+..\main.cpp:15:17: error: within this context
+  while (!window._closed) {
+                 ^
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:43:19 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0; -std=c++0x -o main.o "..\\main.cpp" 
+g++.exe: error: argument to '-fmessage-length=' should be a non-negative integer
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:43:43 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0; -std=c++0x -o main.o "..\\main.cpp" 
+g++.exe: error: argument to '-fmessage-length=' should be a non-negative integer
+00:44:04 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0; -std=c++0x -o window.o "..\\window.cpp" 
+g++.exe: error: argument to '-fmessage-length=' should be a non-negative integer
+00:44:19 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0; -std=c++0x -o main.o "..\\main.cpp" 
+g++.exe: error: argument to '-fmessage-length=' should be a non-negative integer
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:45:01 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0; -std=c++0x -o window.o "..\\window.cpp" 
+g++.exe: error: argument to '-fmessage-length=' should be a non-negative integer
+00:45:02 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0; -std=c++0x -o main.o "..\\main.cpp" 
+g++.exe: error: argument to '-fmessage-length=' should be a non-negative integer
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+00:45:25 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0; -std=c++0x -o main.o "..\\main.cpp" 
+g++.exe: error: argument to '-fmessage-length=' should be a non-negative integer
+00:45:27 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0; -std=c++0x -o main.o "..\\main.cpp" 
+g++.exe: error: argument to '-fmessage-length=' should be a non-negative integer
+16:55:52 **** Rebuild of configuration Debug for project HighScoresE ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o HighScoresE.o "..\\HighScoresE.cpp" 
+..\HighScoresE.cpp: In function 'int main()':
+..\HighScoresE.cpp:30:7: warning: unused variable 'quit' [-Wunused-variable]
+  char quit;
+       ^
+..\HighScoresE.cpp: In function 'void show_highest_score(User*, int)':
+..\HighScoresE.cpp:103:49: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    for (int j = 0; j = (info[i].index_scores - k); j++) {
+                                                 ^
+g++ -o HighScoresE.exe HighScoresE.o 
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+16:55:56 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0; -std=c++0x -o main.o "..\\main.cpp" 
+g++.exe: error: argument to '-fmessage-length=' should be a non-negative integer
+Info: Nothing to build for HighScoresE
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+16:56:06 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0; -std=c++0x -o main.o "..\\main.cpp" 
+g++.exe: error: argument to '-fmessage-length=' should be a non-negative integer
+Info: Nothing to build for HighScoresE
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+16:56:14 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0; -std=c++0x -o main.o "..\\main.cpp" 
+g++.exe: error: argument to '-fmessage-length=' should be a non-negative integer
+Info: Nothing to build for HighScoresE
+Info: Nothing to build for SDL
+Info: Nothing to build for SDL_BMP
+16:58:14 **** Incremental Build of configuration Debug for project SDL_Shapes ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0; -std=c++0x -o window.o "..\\window.cpp" 
+g++.exe: error: argument to '-fmessage-length=' should be a non-negative integer
+Info: Nothing to build for HighScoresE
+Info: Nothing to build for HighScoresE

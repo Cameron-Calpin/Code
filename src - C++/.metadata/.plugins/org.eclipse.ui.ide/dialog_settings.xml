@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\cam.bruh-PC\Desktop\Code\src - C++"/>
+	</list>
 	<section name="CleanDialogSettings">
 		<item value="662" key="DIALOG_WIDTH"/>
 		<item value="false" key="TOGGLE_SELECTED"/>
 		<item value="423" key="DIALOG_HEIGHT"/>
 		<item value="629" key="DIALOG_X_ORIGIN"/>
 		<item value="234" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ResourceNavigator">
+		<item value="Aggregate for window 1474297813376" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
+		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
 	</section>
 	<section name="SaveAsDialogSettings">
 		<item value="700" key="DIALOG_WIDTH"/>
