@@ -62,10 +62,13 @@ int main() {
 				break;
 			case 3: 
 				cout << "Search Player: ";
+				cout << "\n";
 				cin >> name;
 				search_player(creds, countPlayers, name);
 				break;
 			case 4: 
+				show_all_scores(creds, countPlayers);
+				break;
 			case 5:
 				list_users(creds, countPlayers); 
 				break;
@@ -121,8 +124,9 @@ void show_highest_score(User info[], int index) {
 }
 
 void search_player(User info[], int index, string name) {
+
 	for (int i = 0; i < index; i++) {
-		if (name.compare(info[i].player) == 0) {
+		if (info[i].player.find(name, 0) != string::npos) {
 			cout << "USER\t\tHIGH SCORE" << endl;
 			cout << "---------------------------" << endl;
 
@@ -130,6 +134,18 @@ void search_player(User info[], int index, string name) {
 		}
 		else {
 			cout << "Player not found, please try again." << endl;
+		}
+	}
+}
+
+void show_all_scores(User info[], int index) {
+	cout << "USER\t\tSCORES" << endl;
+	cout << "---------------------------" << endl;
+
+	for (int i = 0; i < index; i++) {
+		cout << info[i].player;
+		for (int j = 0; j < info[i].index_scores; j++) {
+			cout << "\t\t" << info[i].scores[j] << endl;
 		}
 	}
 }
