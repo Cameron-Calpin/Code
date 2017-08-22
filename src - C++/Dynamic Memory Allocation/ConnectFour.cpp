@@ -145,6 +145,7 @@ void check_winner_p1(string **grid, string player, int row, int col, bool *win) 
 	int size = (row * col) / 2;
 	int count_p1 = 0;
 	bool s1,s2,s3,s4 = false;
+	
 	int **temp_p1 = new int*[size];
 
 	for (int i = 0; i < size; i++) {
