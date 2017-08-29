@@ -12,6 +12,7 @@ struct node {
 
 void insertNode(node** name, string input, int &count);
 void searchName(node* name, string input);
+void DisplayNames(node* Name);
 
 int main() {
 	node* head = NULL;
@@ -21,9 +22,10 @@ int main() {
 	int count = 0;
 
 	while (k != 'q') {
-		cout << "There are currently " << count << " entries.\n\n";
+		cout << "\n\nThere are currently " << count << " entries.\n\n";
 		cout << "1) Enter a name\n"
-				"2) Search for name\n";
+				"2) Search for name\n"
+				"3) Display Names\n";
 
 		cin >> choice;
 		switch(choice) {
@@ -36,6 +38,9 @@ int main() {
 				cout << "Search for name: ";
 				cin >> input;
 				searchName(head, input);
+				break;
+			case 3:
+				DisplayNames(head);
 				break;
 			default:
 				cout << "\n\nOption not available. Try again.\n\n";
@@ -60,5 +65,13 @@ void searchName(node* name, string input) {
 		}
 		else
 			name = name->next;
+	}
+}
+
+void DisplayNames(node* Name) {
+	cout << "Names in list: ";
+	while (Name != NULL) {
+		cout << Name->name << " ";
+		Name = Name->next;
 	}
 }
