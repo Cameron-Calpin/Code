@@ -9,25 +9,24 @@ struct node {
 	node* p_next;
 };
 
-node* setElements(node** head, int num) {
+void setElements(node** head, int num) {
 	node* p_node = new node;
 	p_node -> number = num;
 	p_node -> p_next = *head;
 	*head = p_node;
-	return p_node;
 }
 
-void removeElement(node** list, node* head, int num, int &count) {
-	//node* p_curr = head;
-	while (head != NULL) {
-		if (head -> p_next -> number == num) {
-			*list -> p_next -> number = 0;
-			*list -> p_next = *list -> p_next -> p_next;
+void removeElement(node* list, int num) {
+	node* p_curr = list;
+	while (list != NULL) {
+		if (num == p_curr -> p_next -> number) {
+			list = p_curr;
+			list -> p_next = list -> p_next -> p_next;
 			break;
 		}
-		if (num == head -> number) {
-			*list -> number = 0;
-			head = list -> p_next; 
+		if (num == p_curr -> number) {
+			list -> number = list -> p_next -> number;
+			list -> p_next = list -> p_next -> p_next; 
 			break;
 		}
 		else {
@@ -36,28 +35,29 @@ void removeElement(node** list, node* head, int num, int &count) {
 	}
 }
 
+void printList(node* list) {
+	cout << "Numbers in list: ";
+	while (list != NULL) {
+		cout << list -> number << " ";
+		list = list -> p_next;
+	}
+	cout << "\n\n";
+}
+
 int main() {
-	int count = 0;
 	int num;
-	node* list = new node;
-	node* p_first = NULL;
+	node* list = NULL;
 
-	list = setElements(&p_first, 5);
-	list = setElements(&p_first, 24);
-	list = setElements(&p_first, 94);
-	list = setElements(&p_first, 44);
-	list = setElements(&p_first, 38);
+	setElements(&list, 5);
+	setElements(&list, 24);
+	setElements(&list, 94);
+	setElements(&list, 44);
+	setElements(&list, 38);
 
-	while (list != NULL) {
-		cout << "Numbers in list: " << list -> number << endl;
-		list = list -> p_next;
-		count++;
-	}
+	printList(list);
+	
+	removeElement(list, 38);
 
-	removeElement(&list, p_first, 94, count);
-
-	while (list != NULL) {
-		cout << "Numbers in list: " << list -> number << endl;
-		list = list -> p_next;
-	}
+	printList(list);
+	
 }
