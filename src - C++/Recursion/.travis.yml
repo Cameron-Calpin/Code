@@ -1,8 +1,7 @@
 language: cpp
 compiler: gcc
 
+before_script: ls
+
 script:
-  - cmake .
-  - cmake --build . -- -j2
-
-
+ - make -C Build
