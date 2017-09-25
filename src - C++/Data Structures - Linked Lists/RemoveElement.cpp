@@ -4,86 +4,63 @@
 
 using namespace std;
 
-struct List {
+struct node {
 	int number;
-	List* p_next;
+	node* p_next;
 };
 
-List* p_first = NULL;
-
-List* setElements(int num) {
-	List* p_node = new List;
+void setElements(node** head, int num) {
+	node* p_node = new node;
 	p_node -> number = num;
-	p_node -> p_next = p_first;
-	p_first = p_node;
-	return p_node;
+	p_node -> p_next = *head;
+	*head = p_node;
 }
 
-void removeElement(int num, int &count) {
-	List* p_curr = p_first;
-	while (p_curr != NULL) {
+void removeElement(node* list, int num) {
+	node* p_curr = list;
+	while (list != NULL) {
 		if (num == p_curr -> p_next -> number) {
-			p_curr -> p_next -> number = 0;
-			p_curr = p_curr -> p_next -> p_next;
+			list = p_curr;
+			list -> p_next = list -> p_next -> p_next;
 			break;
 		}
 		if (num == p_curr -> number) {
-			p_curr -> number = 0;
-			p_curr = p_curr -> p_next;
+			list -> number = list -> p_next -> number;
+			list -> p_next = list -> p_next -> p_next; 
 			break;
 		}
-		else
+		else {
 			p_curr = p_curr -> p_next;
+		}
 	}
-	--count;
+}
+
+void printList(node* list) {
+	cout << "Numbers in list: ";
+	while (list != NULL) {
+		cout << list -> number << " ";
+		list = list -> p_next;
+	}
+	cout << "\n\n";
 }
 
 int main() {
-	int count = 0;
-	int choice;
-	bool elementsGone = false;
+	int num;
+	node* list = NULL;
 
-	List* one = setElements(4);
-	List* two = setElements(10);
-	List* three = setElements(22);
-	List* four = setElements(18);
+	setElements(&list, 5);
+	setElements(&list, 24);
+	setElements(&list, 94);
+	setElements(&list, 44);
+	setElements(&list, 38);
 
-	List* p_current = p_first;
+	printList(list);
+	
+	removeElement(list, 38);
+	removeElement(list, 24);
 
-	system("cls");
-
-	while (elementsGone != true) {
-		while (p_current != NULL) {
-			++count;
-			p_current = p_current -> p_next;
-		}
-
-		cout << "\nSize of Linked List: " << count << "\n\n";
-
-		if (one -> number != 0)
-			cout << "one: " << one -> number << endl;
-		if (two -> number != 0)
-			cout << "two: " << two -> number << endl;
-		if (three -> number != 0)
-			cout << "three: " << three -> number << endl;
-		if (four -> number != 0)
-			cout << "four: " << four -> number << endl;
-		if (count == 0) {
-			cout << "No more nodes in list." << endl;
-			elementsGone = true;
-		}
-
-		cout << "\nWhat element do you want to remove? ";
-		cin >> choice;
-		removeElement(choice, count);
-		system("cls");
-	} 
-
-	delete[] one, two, three, four, p_current;
-	one = NULL;
-	two = NULL;
-	three = NULL;
-	four = NULL;
-	p_current = NULL;
-	exit(0);
+	printList(list);
+	
+	delete[] list;
+	list = NULL;
 }
