@@ -1,6 +1,7 @@
 #include <iostream>
 #include <ctime>
 
+
 using namespace std;
 
 void displayArray(int* ray, int size);
