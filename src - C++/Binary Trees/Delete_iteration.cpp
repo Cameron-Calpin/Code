@@ -19,7 +19,8 @@ stack* insert_stack(b_node* b, stack* s);
 void remove_stack(stack** s);
 
 b_node* insert_btree(b_node* p_tree, int key);
-stack* search(b_node* p_tree, stack* head);
+void search(b_node* p_tree, stack** head);
+void del(b_node* p_tree, stack** head);
 
 int main() {
 	stack* stk = NULL;
@@ -30,7 +31,7 @@ int main() {
 	tree = insert_btree(tree, 45);
 	tree = insert_btree(tree, 9);
 
-	stk = search(tree, stk);
+	search(tree, &stk);
 
 	while (stk != NULL) {
 		cout << stk->data << " ";
@@ -61,7 +62,8 @@ b_node* insert_btree(b_node* p_tree, int key) {
 	if (p_tree == NULL) {
 		b_node* p_new_tree = new b_node;
 		p_new_tree->left = NULL;
-		p_new_tree->right= NULL;p_new_tree->key_value = key;
+		p_new_tree->right= NULL;
+		p_new_tree->key_value = key;
 		return p_new_tree;
 	}
 	if (key < p_tree->key_value) {
@@ -70,13 +72,21 @@ b_node* insert_btree(b_node* p_tree, int key) {
 	else {
 		p_tree->right = insert_btree(p_tree->right, key);
 	}
+	return p_tree;
 }
 
-stack* search(b_node* p_tree, stack* head) {
+void search(b_node* p_tree, stack** head) {
 	if (p_tree != NULL) {
 		search(p_tree->left, head);
 		search(p_tree->right, head);
 		//cout << p_tree->key_value << " ";
-		head = insert_stack(p_tree, head);
+		*head = insert_stack(p_tree, *head);
+	}
+}
+
+void del(b_node* p_tree, stack** head) {
+	while (stk != NULL) {
+		cout << stk->data << " ";
+		stk = stk->next;
 	}
 }
