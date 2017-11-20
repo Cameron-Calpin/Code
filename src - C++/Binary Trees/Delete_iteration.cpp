@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <stdio.h>
+#include <ctime>
 
 using namespace std;
 
@@ -27,21 +28,33 @@ int compare_to(stack* s, b_node* b);
 int main() {
 	stack* stk = NULL;
 	b_node* tree = NULL;
+	srand(time(NULL));
 
-	tree = insert_btree(tree, 28);
-	tree = insert_btree(tree, 76);
-	tree = insert_btree(tree, 45);
-	tree = insert_btree(tree, 9);
+	// Generate an int, 0 - 20, that will
+	// represent number of nodes.
+	int generate_nodes = rand() % 20 + 1;
+	int generate_values;
+
+	for (int i = 0; i < generate_nodes; i++) {
+		// Generate a range of values, 0 - 100, for 
+		// each node in the binary tree.
+		generate_values = rand() % 100 + 1;
+		tree = insert_btree(tree, generate_values);
+	}
 
 	search(tree, &stk);
 
 	cout << "\nStack before: ";
 	display_stack(stk);
 
-	del(tree, &stk);
+	while (stk != NULL) {
+		del(tree, &stk);
+		cout << "\nCurrent Stack: ";
+		display_stack(stk);
+	}
 
-	cout << "\nStack after: ";
-	display_stack(stk);
+	delete[] stk;
+	stk = NULL;
 }
 
 stack* insert_stack(b_node* b, stack* head) {
@@ -61,6 +74,11 @@ stack* insert_stack(b_node* b, stack* head) {
 		temp->next = last;
 	}
 	return head;
+}
+
+void remove_stack(stack** s) {
+	stack* temp = (*s)->next;
+	*s = NULL;
 }
 
 b_node* insert_btree(b_node* p_tree, int key) {
@@ -84,7 +102,6 @@ void search(b_node* p_tree, stack** head) {
 	if (p_tree != NULL) {
 		search(p_tree->left, head);
 		search(p_tree->right, head);
-		//cout << p_tree->key_value << " ";
 		*head = insert_stack(p_tree, *head);
 	}
 }
@@ -113,14 +130,15 @@ void del(b_node* p_tree, stack** head) {
 		if (cmp == 0) {
 			cout << "\nNode being deleted: " << p_tree->key_value; 
 			delete p_tree;
-			temp = (*head)->next;
-			*head = temp;
+			*head = temp->next;
+			break;
 		}
 		else if (cmp == -1) {
-			cout << "\nleft: " << &p_tree->key_value;
+			cout << "\nleft: " << p_tree->key_value;
 			p_tree = p_tree->left;
 		}
 		else {
+			cout << "\nright: " << p_tree->key_value;
 			p_tree = p_tree->right;
 		}
 	}
