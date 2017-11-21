@@ -15,6 +15,7 @@ struct b_tree {
 b_tree* insert(b_tree* node, int value);
 int check_balance(b_tree* node);
 bool is_balanced(b_tree* node);
+void display_tree(b_tree* node);
 
 int main() {
 	b_tree* tree = NULL;
@@ -22,10 +23,23 @@ int main() {
 	int gen_nodes = rand() % 20 + 1;
 	int gen_values;
 
+	// tree = insert(tree, 48);
+	// tree = insert(tree, 63);
+	// tree = insert(tree, 56);
+	// tree = insert(tree, 7);
+	// tree = insert(tree, 65);
+	// tree = insert(tree, 52);
+	// tree = insert(tree, 15);
+	// tree = insert(tree, 3);
+
 	for (int i = 0; i < gen_nodes; i++) {
 		gen_values = rand() % 100 + 1;
 		tree = insert(tree, gen_values);
 	}	
+
+	cout << "\nBinary Tree: ";
+	display_tree(tree);
+	cout << "\n";
 
 	if (is_balanced(tree) == true) {
 		cout << "Tree is balanced" << endl;
@@ -49,6 +63,7 @@ b_tree* insert(b_tree* node, int value) {
 	else {
 		node->right = insert(node->right, value);
 	}
+	return node;
 }
 
 int check_balance(b_tree* node) {
@@ -57,8 +72,12 @@ int check_balance(b_tree* node) {
 	}
 
 	int leftHeight = check_balance(node->left);
+	if (leftHeight == -1) {
+		return -1;
+	}
+
 	int rightHeight = check_balance(node->right);
-	if (rightHeight == -1 || leftHeight == -1) {
+	if (rightHeight == -1) {
 		return -1;
 	}
 
@@ -75,4 +94,12 @@ bool is_balanced(b_tree* node) {
 		return false;
 	}
 	return true;
+}
+
+void display_tree(b_tree* node) {
+	if (node != NULL) {
+		display_tree(node->left);
+		cout << node->key_value << " ";
+		display_tree(node->right);
+	}
 }
