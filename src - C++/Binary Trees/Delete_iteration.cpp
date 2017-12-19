@@ -35,6 +35,15 @@ int main() {
 	int generate_nodes = rand() % 20 + 1;
 	int generate_values;
 
+	// tree = insert_btree(tree, 48);
+	// tree = insert_btree(tree, 63);
+	// tree = insert_btree(tree, 56);
+	// tree = insert_btree(tree, 3);
+	// tree = insert_btree(tree, 65);
+	// tree = insert_btree(tree, 52);
+	// tree = insert_btree(tree, 15);
+	// tree = insert_btree(tree, 7);
+
 	for (int i = 0; i < generate_nodes; i++) {
 		// Generate a range of values, 0 - 100, for 
 		// each node in the binary tree.
@@ -125,8 +134,8 @@ int compare_to(stack* s, b_node* b) {
 void del(b_node* p_tree, stack** head) {
 	stack* temp = *head;
 	while (*head != NULL) {
-		int cmp = compare_to(*head, p_tree);
-		cout << "\nNODE COUNT: " << cmp;
+		int cmp = compare_to(temp, p_tree);
+		cout << "\nNODE DIRECTION: " << cmp;
 		if (cmp == 0) {
 			cout << "\nNode being deleted: " << p_tree->key_value; 
 			delete p_tree;
