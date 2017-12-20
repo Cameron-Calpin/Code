@@ -16,7 +16,7 @@ struct Boi {
 void add_friend(Boi *friends, int &n_elem);
 void change_days(Boi *friends, string Name, int n_elem);
 void display_friends(Boi *friends, int n_elem);
-Boi *growArray(Boi *friends, int *cyz);
+Boi* growArray(Boi *friends, int *cyz);
 
 int main() {
 	string name;
