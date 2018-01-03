@@ -24,7 +24,8 @@ int main() {
 			break;
 		case 2:
 			result = subtract(one, two);
-			cout << one << " - " << two << " = " << result;			break;
+			cout << one << " - " << two << " = " << result;			
+			break;
 		case 3:
 			result = multiply(one, two);
 			cout << one << " * " << two << " = " << result;
