@@ -4,12 +4,15 @@
 using namespace std;
 
 int main() {
-	vectorOfInt a;
+	vectorOfInt a(3);
 	a.pushBack(5);
 	a.pushBack(6);
 	a.pushBack(9);
-	cout << a.getValue(0) << endl;
-	cout << a.getValue(1) << endl;
-	cout << a.getValue(2) << endl;
+	a.pushFront(10);
+	a.pushFront(13);
+	a.pushFront(18);
+	for (int i = 0; i < a.getSize(); i++) {
+		cout << a.getValue(i) << endl;
+	}
 	return 0;
 }

@@ -19,6 +19,7 @@ class vectorOfInt {
 
 		// Getter Method
 		int getValue(int index);
+		int getSize();
 
 		// Setter Method
 		void setValue(int index, int val);
