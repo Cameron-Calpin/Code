@@ -10,4 +10,5 @@ class Example:
 var = Example(Age = 17, Location = 'UK')
 var.set_vars('name', 'alex')
 print(var.get_vars('name'))
+print(var.get_vars('Age'))
 print(var.get_vars('Location'))
