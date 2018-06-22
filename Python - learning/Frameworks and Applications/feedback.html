@@ -1,0 +1,25 @@
+<FORM METHOD=POST ACTION="http://localhost/cgi-enabled/feedback.py">
+<UL><I>Please fill out the entire form:</I></UL>
+<CENTER><TABLE WIDTH="100%">
+	<TR><TD ALIGN=RIGHT WIDTH="20%">Name:</TD>
+		<TD><INPUT TYPE=text NAME=name SIZE=50 VALUE=""></TD></TR>
+	<TR><TD ALIGN=RIGHT>Email Address:</TD>
+		<TD><INPUT TYPE=text NAME=email SIZE=50 VALUE=""></TD></TR>
+	<TR><TD ALIGN=RIGHT>Mailing Address:</TD>
+		<TD><INPUT TYPE=text NAME=address SIZE=50 VALUE=""></TD>
+	</TR>
+	<TR>
+		<TD ALIGN=RIGHT>Type of Message:</TD>
+		<TD><INPUT TYPE=radio NAME=type VALUE=complaint>complaint</TD>
+	</TR>
+	<TR>
+		<TD ALIGN=RIGHT VALIGN=TOP>Enter the text in here:</TD>
+		<TD><TEXTAREA NAME=text ROWS=5, COLS=50 VALUE="">
+		</TEXTAREA></TD>
+	</TR>
+	<TR>
+		<TD></TD>
+		<TD><INPUT type=submit name=send value="Send the feedback!"></TD>
+	</TR>
+</TABLE></CENTER>
+</FORM>

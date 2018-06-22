@@ -1,0 +1,10 @@
+1	one
+2	one
+3	two
+7	three
+8	two
+10	one
+14	three
+19	three
+20	three
+30	three

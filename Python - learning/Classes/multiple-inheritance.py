@@ -19,7 +19,11 @@ class NonMarineMammal(Mammal):
 
 class Dog(NonMarineMammal, NonWingedMammal):
 	def __init__(self):
+<<<<<<< HEAD
 		print('Dog has 4 legs.')      
+=======
+		print('Dog has 4 legs.')
+>>>>>>> 98940185dbdc544539742f2f6e1ed2d9e9bdb18c
 		super().__init__('Dog')
 
 d = Dog()
