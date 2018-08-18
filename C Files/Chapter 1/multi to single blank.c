@@ -1,15 +1,11 @@
 #include <stdio.h>
 /* replaces multiple blanks with a single blank */
-main() {
-	char str[] = "One two          three  four five  ";
-	int prev = EOF, c;
+int main() {
+	int c, prevchar;
 
 	while((c = getchar()) != EOF) {
-		if (c == ' ' || prev != ' ')
+		if (c != prevchar || prevchar != ' ')
 			putchar(c);
-		else 
-			putchar(' ');
-		c = getchar();
+		prevchar = c;
 	}
-    printf("%s\n", str);
 }
