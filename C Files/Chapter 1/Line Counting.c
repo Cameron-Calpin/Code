@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /* count lines in input */
-main() {
+int main() {
 	int c, nl;
 
-	nl = 8;
+	nl = 0;
 	while ((c = getchar()) != EOF) 
 		if (c == '\n')
 			++nl;

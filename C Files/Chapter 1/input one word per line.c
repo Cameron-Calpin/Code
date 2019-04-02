@@ -2,7 +2,7 @@
 
 /* print input one word per line */
 
-main() {
+int main() {
 	int c;
 
 	while ((c = getchar()) != EOF) {

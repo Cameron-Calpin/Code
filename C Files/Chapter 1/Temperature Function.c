@@ -10,7 +10,7 @@ main() {
     printf("Enter number in fahrenheit: ");
     scanf("%d", &f);
 
-    printf("Temperature in Celcius: %3.0f\n", temp(f));
+    printf("Temperature in Celcius: %3.0f\n", temp(&f));
 }
 
 double temp(double fahr) {

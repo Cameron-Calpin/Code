@@ -8,7 +8,7 @@
 void foldLine(char[], int);
 int validateInput();
 
-main() {
+int main() {
 	int column = 0;
 	char line[MAXLINELENGTH];
 	printf("At what column would you like to start folding? ");
