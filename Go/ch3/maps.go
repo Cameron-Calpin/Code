@@ -23,4 +23,5 @@ func main() {
 
 	// create map with capacity of 10
 	ages := make(map[int][]string, 10)
+	fmt.Println("ages: ", ages)
 }
