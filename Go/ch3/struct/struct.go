@@ -29,4 +29,6 @@ func main() {
 		name: "Beth",
 	}
 
+	fmt.Println("\nBeth:", beth)
+
 }
