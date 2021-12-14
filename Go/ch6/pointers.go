@@ -18,4 +18,9 @@ func main() {
 	fmt.Println("pointerX:", pointerX)
 	fmt.Println("pointerY:", pointerY)
 
+	// using built-in reserved word 'new' to create pointer var
+	var one = new(int)
+	fmt.Println(one == nil) // prints false
+	fmt.Println("*one:", *one)
+
 }
