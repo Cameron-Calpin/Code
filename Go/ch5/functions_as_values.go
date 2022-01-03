@@ -14,7 +14,7 @@ func div(i int, j int) int { return i / j }
 
 // Now we create a map to associate a math
 // operator with each function
-var opMap = map[string]func(int, int) int {
+var opMap = map[string]func(int, int) int{
 	"+": add,
 	"-": sub,
 	"*": mul,
@@ -22,7 +22,7 @@ var opMap = map[string]func(int, int) int {
 }
 
 func main() {
-	expressions := [][]string {
+	expressions := [][]string{
 		[]string{"2", "+", "3"},
 		[]string{"2", "-", "3"},
 		[]string{"2", "*", "3"},

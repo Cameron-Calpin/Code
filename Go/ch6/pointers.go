@@ -22,5 +22,4 @@ func main() {
 	var one = new(int)
 	fmt.Println(one == nil) // prints false
 	fmt.Println("*one:", *one)
-
 }
