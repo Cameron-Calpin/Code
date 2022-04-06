@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;SDL_Shapes/SDL_Shapes.cpp&apos; to &apos;window.cpp&apos;" description="Rename resource &apos;SDL_Shapes.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="SDL_Shapes.cpp" name="window.cpp" stamp="1498705987333" updateReferences="true"/>
-</session>

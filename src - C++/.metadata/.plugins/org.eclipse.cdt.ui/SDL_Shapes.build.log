@@ -1,7 +1,0 @@
-16:58:14 **** Incremental Build of configuration Debug for project SDL_Shapes ****
-Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0; -std=c++0x -o window.o "..\\window.cpp" 
-g++.exe: error: argument to '-fmessage-length=' should be a non-negative integer
-
-16:58:14 Build Finished (took 165ms)
-
