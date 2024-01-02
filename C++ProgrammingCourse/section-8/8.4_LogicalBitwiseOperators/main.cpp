@@ -29,7 +29,7 @@ int main() {
     std::cout << std::endl;
 
     // NOT
-	std::cout << std::endl;
+	  std::cout << std::endl;
     std::cout << "Bitwise NOT " << std::endl;
 	
     std::cout << std::setw(COLUMN_WIDTH) << "~value1 : "
